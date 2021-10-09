@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-	mode: "development",
+	mode: "production",
 	devServer: {
 		historyApiFallback: true,
 
@@ -32,7 +32,7 @@ module.exports = {
 		new CleanWebpackPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
-			filename: "styles/[name].[contenthash].css",
+			filename: "styles/main.css",
 			chunkFilename: "[id].css",
 		}),
 	],

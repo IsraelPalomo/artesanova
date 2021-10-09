@@ -3,6 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
 module.exports = {
 	mode: "development",
 	devServer: {
@@ -18,16 +21,20 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, "./dist"),
-		filename: "bundle.js",
+		filename: "[name].bundle.js",
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Artesanova",
+			title: "Tutorial Webpack",
 			template: path.resolve(__dirname, "./src/index.html"),
 			filename: "index.html",
 		}),
 		new CleanWebpackPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
+		new MiniCssExtractPlugin({
+			filename: "styles/[name].[contenthash].css",
+			chunkFilename: "[id].css",
+		}),
 	],
 	module: {
 		rules: [
@@ -36,13 +43,37 @@ module.exports = {
 				type: "asset/resource",
 			},
 			{
-				test: /\.(waff(2)?|eot|ttf|otf|svg)$/,
+				test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
 				type: "asset/inline",
 			},
 			{
 				test: /\.(scss|css)$/,
-				use: ["style-loader", "css-loader", "sass-loader"],
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: "css-loader",
+						options: {
+							importLoaders: 2,
+							sourceMap: false,
+							modules: true,
+						},
+					},
+
+					"sass-loader",
+				],
 			},
 		],
+	},
+	optimization: {
+		minimize: true,
+		minimizer: [new CssMinimizerPlugin(), "..."],
+		runtimeChunk: {
+			name: "runtime",
+		},
+	},
+	performance: {
+		hints: false,
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000,
 	},
 };

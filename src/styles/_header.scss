@@ -22,16 +22,97 @@
 	}
 	.header__card {
 		height: 80vh;
-		width: 80%;
-		background-color: $colour-secondary;
+		width: 90%;
+		background-color: $colour-principal;
 		margin: 0 auto;
 		border-radius: 25px;
-		box-shadow: 0.2px 0px 1.2px rgba(0, 0, 0, 0.013), 0.5px 0px 2.7px rgba(0, 0, 0, 0.019),
-			0.8px 0px 4.6px rgba(0, 0, 0, 0.023), 1.2px 0px 6.9px rgba(0, 0, 0, 0.027),
-			1.8px 0px 10px rgba(0, 0, 0, 0.03), 2.5px 0px 14.2px rgba(0, 0, 0, 0.033),
-			3.5px 0px 20.1px rgba(0, 0, 0, 0.037), 5.1px 0px 29.2px rgba(0, 0, 0, 0.041),
-			7.9px 0px 45px rgba(0, 0, 0, 0.047), 14px 0px 80px rgba(0, 0, 0, 0.06);
+		box-shadow: 0px 0px 2.4px rgba(0, 0, 0, 0.04), 0px 0px 5.3px rgba(0, 0, 0, 0.059),
+			0px 0px 8.9px rgba(0, 0, 0, 0.073), 0px 0px 13.5px rgba(0, 0, 0, 0.084),
+			0px 0px 19.4px rgba(0, 0, 0, 0.095), 0px 0px 27.5px rgba(0, 0, 0, 0.106),
+			0px 0px 39px rgba(0, 0, 0, 0.117), 0px 0px 56.6px rgba(0, 0, 0, 0.131),
+			0px 0px 87.2px rgba(0, 0, 0, 0.15), 0px 0px 155px rgba(0, 0, 0, 0.19);
+
 		margin-top: 2rem;
+		.header__card--seccion2 {
+			display: none;
+			p {
+				line-height: 1.7rem;
+			}
+			.card__btn--2 {
+				margin-top: 2rem;
+				display: block;
+				padding: 0.5rem 6rem;
+				background-color: $colour-buttons;
+				border: none;
+				color: $colour-sure;
+
+				cursor: pointer;
+				box-shadow: 0px 0px 2.4px rgba(0, 0, 0, 0.04), 0px 0px 5.3px rgba(0, 0, 0, 0.059),
+					0px 0px 8.9px rgba(0, 0, 0, 0.073), 0px 0px 13.5px rgba(0, 0, 0, 0.084),
+					0px 0px 19.4px rgba(0, 0, 0, 0.095), 0px 0px 27.5px rgba(0, 0, 0, 0.106),
+					0px 0px 39px rgba(0, 0, 0, 0.117), 0px 0px 56.6px rgba(0, 0, 0, 0.131),
+					0px 0px 87.2px rgba(0, 0, 0, 0.15), 0px 0px 155px rgba(0, 0, 0, 0.19);
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
+		.header__card__seccion1__fotos {
+			display: flex;
+			margin-top: 3rem;
+			justify-content: center;
+			gap: 1rem;
+
+			.header__img {
+				width: 5rem;
+				height: 4.5rem;
+				object-fit: cover;
+				border-radius: 5px;
+			}
+		}
+		h1 {
+			color: white;
+			font-family: $font;
+			padding: 1rem;
+			padding-top: 3rem;
+			text-align: center;
+			letter-spacing: 5px;
+		}
+		h2 {
+			color: white;
+			font-family: $font;
+			padding: 1rem;
+			padding-top: 3rem;
+			text-align: center;
+		}
+		.card__btn--1 {
+			margin: 0 auto;
+			display: block;
+			padding: 0.5rem 6rem;
+			background-color: $colour-buttons;
+			border: none;
+			color: $colour-sure;
+
+			cursor: pointer;
+			box-shadow: 0px 0px 2.4px rgba(0, 0, 0, 0.04), 0px 0px 5.3px rgba(0, 0, 0, 0.059),
+				0px 0px 8.9px rgba(0, 0, 0, 0.073), 0px 0px 13.5px rgba(0, 0, 0, 0.084),
+				0px 0px 19.4px rgba(0, 0, 0, 0.095), 0px 0px 27.5px rgba(0, 0, 0, 0.106),
+				0px 0px 39px rgba(0, 0, 0, 0.117), 0px 0px 56.6px rgba(0, 0, 0, 0.131),
+				0px 0px 87.2px rgba(0, 0, 0, 0.15), 0px 0px 155px rgba(0, 0, 0, 0.19);
+
+			&:hover {
+				color: white;
+			}
+		}
+		hr {
+			transform: rotate(90deg);
+			border: none;
+			background-color: white;
+			width: 60vh;
+			height: 1px;
+			display: none;
+		}
 	}
 	.header__img--rama {
 		width: 15rem;
@@ -41,5 +122,6 @@
 		right: 0;
 		transform: rotateZ(360deg);
 		z-index: 99999;
+		filter: drop-shadow(0px 30px 5px rgba(0, 0, 0, 0.466));
 	}
 }

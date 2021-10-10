@@ -1,0 +1,16 @@
+.header {
+	height: 100vh;
+	background-image: url(../static/fondo_header.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	.header__nav {
+		padding: 1rem 2rem;
+		display: flex;
+		justify-content: right;
+		gap: 2rem;
+		.nav__link {
+			text-decoration: none;
+			color: $colour-sure;
+		}
+	}
+}

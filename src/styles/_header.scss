@@ -3,14 +3,43 @@
 	background-image: url(../static/fondo_header.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
+
 	.header__nav {
-		padding: 1rem 2rem;
+		padding: 1.5rem;
 		display: flex;
-		justify-content: right;
-		gap: 2rem;
+		justify-content: center;
+		gap: 1rem;
+
+		background-color: $colour-form;
 		.nav__link {
 			text-decoration: none;
 			color: $colour-sure;
+			&:hover {
+				color: white;
+			}
 		}
+	}
+	.header__card {
+		height: 80vh;
+		width: 80%;
+		background-color: $colour-secondary;
+		margin: 0 auto;
+		border-radius: 25px;
+		box-shadow: 0.2px 0px 1.2px rgba(0, 0, 0, 0.013), 0.5px 0px 2.7px rgba(0, 0, 0, 0.019),
+			0.8px 0px 4.6px rgba(0, 0, 0, 0.023), 1.2px 0px 6.9px rgba(0, 0, 0, 0.027),
+			1.8px 0px 10px rgba(0, 0, 0, 0.03), 2.5px 0px 14.2px rgba(0, 0, 0, 0.033),
+			3.5px 0px 20.1px rgba(0, 0, 0, 0.037), 5.1px 0px 29.2px rgba(0, 0, 0, 0.041),
+			7.9px 0px 45px rgba(0, 0, 0, 0.047), 14px 0px 80px rgba(0, 0, 0, 0.06);
+		margin-top: 2rem;
+	}
+	.header__img--rama {
+		width: 30rem;
+		height: 15rem;
+		position: absolute;
+		bottom: 1rem;
+		right: 0;
+		transform: rotateZ(360deg);
+		z-index: 99999;
 	}
 }

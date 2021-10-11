@@ -23,6 +23,7 @@
 	.header__card {
 		height: 80vh;
 		width: 90%;
+		overflow: hidden;
 		background-color: $colour-principal;
 		margin: 0 auto;
 		border-radius: 25px;
@@ -33,6 +34,16 @@
 			0px 0px 87.2px rgba(0, 0, 0, 0.15), 0px 0px 155px rgba(0, 0, 0, 0.19);
 
 		margin-top: 2rem;
+		padding-bottom: 7rem;
+		.header__card--seccion1 {
+			p {
+				color: white;
+				text-align: center;
+				font-family: $font;
+				padding: 0 2rem;
+				margin-top: 3rem;
+			}
+		}
 		.header__card--seccion2 {
 			display: none;
 			p {
@@ -74,7 +85,7 @@
 			color: white;
 			font-family: $font;
 			padding: 1rem;
-			padding-top: 3rem;
+			padding-top: 2rem;
 			text-align: center;
 			letter-spacing: 5px;
 		}
@@ -82,7 +93,7 @@
 			color: white;
 			font-family: $font;
 			padding: 1rem;
-			padding-top: 3rem;
+
 			text-align: center;
 		}
 		.card__btn--1 {

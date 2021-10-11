@@ -13,6 +13,14 @@
 		}
 	}
 }
+@media (max-height: 670px) {
+	.header {
+		.header__img--rama {
+			display: none;
+		}
+	}
+}
+
 @media (min-width: 900px) {
 }
 @media (min-width: 1100px) {
@@ -20,6 +28,7 @@
 		.header__img--rama {
 			width: 30rem;
 			height: 15rem;
+			display: block;
 		}
 		.header__card {
 			display: flex;
@@ -33,6 +42,9 @@
 			.header__card--seccion1 {
 				margin-right: -5rem;
 				width: 50%;
+				p {
+					display: none;
+				}
 				.card__btn--1 {
 					display: none;
 				}

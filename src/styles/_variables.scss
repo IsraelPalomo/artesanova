@@ -1,6 +1,6 @@
 //? COLORS
 
-$colour-principal: #111518;
+$colour-principal: #0f1316;
 $colour-secondary: #0f1114;
 $colour-buttons: #161b1f;
 $colour-sure: #a7a7a7;
@@ -13,4 +13,5 @@ $font: "Roboto", sans-serif;
 html {
 	box-sizing: border-box;
 	line-height: 1.5;
+	background-color: $colour-principal;
 }

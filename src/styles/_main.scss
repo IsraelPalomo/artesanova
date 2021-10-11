@@ -1,0 +1,82 @@
+.main {
+	margin-top: 5rem;
+	overflow: hidden;
+	.main__productos {
+		.main__productos__titulo {
+			color: white;
+			font-family: $font;
+			text-align: center;
+		}
+		.acuarela__productos {
+			width: 75rem;
+			height: 65rem;
+			display: block;
+
+			position: absolute;
+
+			left: 0;
+			right: 0;
+			padding-top: 5rem;
+			margin: auto;
+			display: none;
+			z-index: 99;
+		}
+		.main__productos__card {
+			background-color: $colour-principal;
+			height: auto;
+			margin: 0 auto;
+			padding: 5rem 1rem;
+			text-align: center;
+			width: 90%;
+			max-width: 30rem;
+			position: relative;
+			z-index: 99999;
+
+			box-shadow: 0px 0px 2.4px rgba(0, 0, 0, 0.04), 0px 0px 5.3px rgba(0, 0, 0, 0.059),
+				0px 0px 8.9px rgba(0, 0, 0, 0.073), 0px 0px 13.5px rgba(0, 0, 0, 0.084),
+				0px 0px 19.4px rgba(0, 0, 0, 0.095), 0px 0px 27.5px rgba(0, 0, 0, 0.106),
+				0px 0px 39px rgba(0, 0, 0, 0.117), 0px 0px 56.6px rgba(0, 0, 0, 0.131),
+				0px 0px 87.2px rgba(0, 0, 0, 0.15), 0px 0px 155px rgba(0, 0, 0, 0.19);
+			h3 {
+				color: white;
+				font-family: $font;
+			}
+			hr {
+				width: 80%;
+				display: inline-block;
+				margin: 1rem;
+			}
+			a {
+				display: inline-block;
+				text-decoration: none;
+				color: $colour-sure;
+				font-weight: 900;
+				font-family: $font;
+				width: 100%;
+
+				&:hover {
+					color: white;
+				}
+			}
+
+			.main__productos__img {
+				width: 80%;
+				height: 15rem;
+				object-fit: cover;
+				max-width: 13rem;
+			}
+			.main__productos__p {
+				color: white;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	.main__materiales {
+		margin-top: 10rem;
+		.main__materiales__titulo {
+			color: white;
+			font-family: $font;
+			text-align: center;
+		}
+	}
+}

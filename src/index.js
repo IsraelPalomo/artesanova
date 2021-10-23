@@ -7,6 +7,10 @@ import imgSrc4 from "./static/Producto3.png";
 import imgSrc5 from "./static/Producto4.png";
 import imgSrc6 from "./static/acuarela__productos.png";
 import imgSrc7 from "./static/bosque.jpg";
+import imgSrc8 from "./static/footer.png";
+
+const img10 = document.querySelector(".footer--img");
+img10.src = imgSrc8;
 
 const img9 = document.querySelector(".bosque");
 img9.src = imgSrc7;

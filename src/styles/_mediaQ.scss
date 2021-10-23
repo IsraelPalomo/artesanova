@@ -12,17 +12,32 @@
 			height: 10rem;
 		}
 	}
-}
-@media (max-height: 670px) {
-	.header {
-		.header__img--rama {
-			display: none;
+	.main {
+		.main__materiales {
+			.main__materiales__maderas--grupo-1 {
+				display: flex;
+				gap: 3rem;
+			}
+			.main__materiales__maderas--grupo-2 {
+				display: flex;
+				gap: 3rem;
+			}
 		}
 	}
-}
+	@media (max-height: 670px) {
+		.header {
+			.header__img--rama {
+				display: none;
+			}
+		}
+	}
 
-@media (min-width: 900px) {
-	.main {
+	@media (min-width: 900px) {
+		.main {
+			#bosque {
+				display: block;
+			}
+		}
 		.main__productos {
 			.main__productos__card {
 				.main__productos__card--1 {
@@ -99,6 +114,11 @@
 					}
 				}
 			}
+		}
+	}
+	form {
+		#c__input {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 }

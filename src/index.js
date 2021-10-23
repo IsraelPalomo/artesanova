@@ -6,6 +6,10 @@ import imgSrc3 from "./static/Producto2.png";
 import imgSrc4 from "./static/Producto3.png";
 import imgSrc5 from "./static/Producto4.png";
 import imgSrc6 from "./static/acuarela__productos.png";
+import imgSrc7 from "./static/bosque.jpg";
+
+const img9 = document.querySelector(".bosque");
+img9.src = imgSrc7;
 
 const img8 = document.querySelector(".acuarela__productos");
 img8.src = imgSrc6;

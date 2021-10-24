@@ -1,5 +1,6 @@
 import "./styles/main.scss";
 import "./main.css";
+
 import imgSrc1 from "./static/rama_header.png";
 import imgSrc2 from "./static/Producto1.png";
 import imgSrc3 from "./static/Producto2.png";
@@ -33,3 +34,5 @@ const img3 = document.querySelector(".header__img--2");
 img3.src = imgSrc3;
 const img4 = document.querySelector(".header__img--3");
 img4.src = imgSrc4;
+
+AOS.init();

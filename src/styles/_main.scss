@@ -99,6 +99,10 @@
 			position: relative;
 			.main__materiales__madera {
 				margin-bottom: 2rem;
+				&:hover {
+					transform: scale(1.2);
+					transition: 0.3s ease-in-out;
+				}
 				p {
 					color: white;
 					font-family: $font;

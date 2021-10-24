@@ -11,13 +11,13 @@
 	<body>
 		<header class="header">
 			<nav class="header__nav">
-				<a href="" class="nav__link">Home</a>
-				<a href="" class="nav__link">About</a>
-				<a href="" class="nav__link">Shop</a>
-				<a href="" class="nav__link">Blog</a>
-				<a href="" class="nav__link">Contac</a>
+				<a href="#inicio" class="nav__link">Inicio</a>
+				<a href="#productos" class="nav__link">Productos</a>
+				<a href="#materiales" class="nav__link">Materiales</a>
+				<a href="#contacto" class="nav__link">Contacto</a>
+				<a href="#redes" class="nav__link">Redes</a>
 			</nav>
-			<section class="header__card">
+			<section class="header__card" id="inicio">
 				<div class="header__card--seccion1">
 					<h1>Artesanova</h1>
 					<h2>Especialista en productos de madera</h2>
@@ -47,7 +47,7 @@
 			<img class="header__img--rama" src="" alt="" />
 		</header>
 		<main class="main">
-			<section class="main__productos">
+			<section class="main__productos" id="productos">
 				<h2 class="main__productos__titulo">Nuestros Productos</h2>
 				<img class="acuarela__productos" id="acuarela" src="" alt="" />
 				<div class="main__productos__card">
@@ -92,7 +92,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="main__materiales">
+			<section class="main__materiales" id="materiales">
 				<h2 class="main__materiales__titulo">Nuestros Materiales</h2>
 				<img class="bosque" id="bosque" src="./static/bosque.jpg" alt="" />
 				<div class="main__materiales__maderas">
@@ -112,8 +112,8 @@
 					</div>
 				</div>
 			</section>
-			<sectionc class="main__form">
-				<form data-aos="flip-left">
+			<sectionc class="main__form" id="contacto">
+				<form data-aos="flip-left" data-aos-duration="2000">
 					<h2>Contac Us</h2>
 					<div class="contenedor__input" id="c__input">
 						<input type="text" placeholder="Your Name">
@@ -125,7 +125,7 @@
 			</section>
 			<section class="footer">
 				<img class="footer--img"src="" alt="">
-				<div class="redes">
+				<div class="redes" id="redes">
 					<i class="redes__icon fab fa-facebook-square"></i>
 					<i class=" redes__icon fab fa-instagram-square"></i>
 					<i class="redes__icon fab fa-twitter-square"></i>

@@ -3,3 +3,7 @@
 @import "_header.scss";
 @import "_mediaQ.scss";
 @import "_main.scss";
+
+html {
+	scroll-behavior: smooth;
+}
